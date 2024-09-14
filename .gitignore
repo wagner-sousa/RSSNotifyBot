@@ -131,3 +131,9 @@ dist
 
 # ducks
 ducks/*
+
+# clasp files
+.clasp.json
+
+# vscode files
+.dockerrc
