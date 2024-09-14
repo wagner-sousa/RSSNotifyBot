@@ -1,0 +1,29 @@
+{
+  "name": "rss-notify-bot",
+  "version": "1.0.0",
+  "description": "Projeto básico para monitorar feed(s) RSS e notificar as atualizações via webhook do Google Chat",
+  "main": "app.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wagner-sousa/RSSNotifyBot.git"
+  },
+  "keywords": [
+    "RSS",
+    "feed",
+    "google",
+    "chat",
+    "typescript",
+    "app",
+    "script"
+  ],
+  "author": "Wagner Sousa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wagner-sousa/RSSNotifyBot/issues"
+  },
+  "homepage": "https://github.com/wagner-sousa/RSSNotifyBot#readme",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@types/google-apps-script": "^1.0.77"
+  }
+}
