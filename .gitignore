@@ -134,6 +134,7 @@ ducks/*
 
 # clasp files
 .clasp.json
+appsscript.json
 
 # vscode files
 .dockerrc
