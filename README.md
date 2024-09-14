@@ -1,4 +1,4 @@
-# GITLAB RELEASE NOTIFICATION
+# 🤖 RSS NOTIFY BOT
 > _A simple method to send notification reading a feed web_
 
 ## Technologies
