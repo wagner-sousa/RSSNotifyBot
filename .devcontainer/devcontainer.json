@@ -4,7 +4,15 @@
 	"name": "rss-notify-bot",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
-
+	// Needed for clasp
+	"runArgs": [
+		"-e", "DISPLAY=${env:DISPLAY}",
+		"-v", "/tmp/.X11-unix:/tmp/.X11-unix",
+		"--network", "host"
+	  ],
+	"remoteEnv": {
+		"DISPLAY": "${localEnv:DISPLAY}"
+	},
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
