@@ -1,0 +1,3 @@
+interface GoogleChatMessageCardColumn {
+    columnItems: GoogleChatMessageCardColumnItem[]
+}
