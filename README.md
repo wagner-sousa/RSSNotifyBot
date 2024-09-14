@@ -50,6 +50,5 @@ Were created many default properties to run the script.(_You can see them in the
 
 <sup>*Note: negrite property is required*</sup>
 
-* **`DEBUG_MODE`** - Enable debug mode to see more logs. Accept 0 or 1.
 * **`RSS_URL`** - Feed URL for RSS use `;` to separate for multiple URLs. (See [documentation](https://www.rss2json.com/))
 * **`GOOGLE_CHAT_WEBHOOKS`** - Webhooks URL for Google Chat use `;` to separate for multiple URLs. (See [documentation](https://developers.google.com/chat/how-tos/webhooks))
