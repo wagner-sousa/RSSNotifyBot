@@ -195,7 +195,7 @@ function makeMessage(tag)
   return {
     cards: [{
         "header": {
-          "title": "Liberação Auge",
+          "title": "Liberação " + getParameterValue('APP_NAME'),
           "subtitle": 'VERSÃO: ' + tag.version,
           "imageUrl": getParameterValue(LOGO_URL)
         },
@@ -566,10 +566,10 @@ function sendMail(tag)
   var html_message = mail.evaluate().getContent().replace('{list}', makeListItemsMail(tag.items));
 
   var cc = '';
-  if(getParameterValue(DEBUG) != 1) cc = 'michael@propulsar.com.br,eder@propulsar.com.br,cristiane@propulsar.com.br';
-  var toEmail = "wagner.sousa@propulsar.com.br"; // Please set the email for `to`.
+  if(getParameterValue(DEBUG) != 1) cc = getParameterValue('EMAIL_CC');
+  var toEmail = getParameterValue('EMAIL'); // Please set the email for `to`.
   var name = "Propulsar";
-  var subject = "Auge versão " + tag.version + "  disponível 🚀";
+  var subject = getParameterValue('APP_NAME') + " versão " + tag.version + "  disponível 🚀";
   GmailApp.sendEmail(toEmail, subject, '', {
       'name': name,
       'noReply': true,
