@@ -1,0 +1,3 @@
+interface GoogleChatMessageCardIcon {
+    name: string
+}

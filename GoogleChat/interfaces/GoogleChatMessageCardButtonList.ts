@@ -1,0 +1,3 @@
+interface GoogleChatMessageCardButtonList {
+    buttons: GoogleChatMessageCardButton[]
+}
